@@ -1,0 +1,27 @@
+{
+  "name": "simple-jest-application",
+  "version": "1.0.0",
+  "description": "applications-on-unit-testing-course",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "author": "Abram Emad",
+  "license": "ISC",
+  "devDependencies": {
+    "jest": "^29.4.1"
+  },
+  "jest": {
+    "collectCoverage": true,
+    "coverageReporters": [
+      "html"
+    ]
+  },
+  "coverageDirectory": "reports",
+  "collectCoverageFrom": [
+    "**/*.{js,jsx,ts}"
+  ],
+  "coveragePathIgnorePatterns": [
+    "/node_modules/"
+  ]
+}
